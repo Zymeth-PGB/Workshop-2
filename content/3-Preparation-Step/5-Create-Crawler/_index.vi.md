@@ -54,11 +54,11 @@ Ta sẽ tạo 2 **crawler** để phục vụ cho mục tiêu lấy **schema** t
 ![Image](../../images/3/3-5/9-2.png?width=40pc)
 
 10.  Kiểm tra lại các lựa chọn nếu ổn thì chọn **Create crawler**:
-    - **Crawler S3**
+     - **Crawler S3**
 ![Image](../../images/3/3-5/10-1.png?width=40pc)
 
-    - **Crawler Redshift**
+   - **Crawler Redshift**
 ![Image](../../images/3/3-5/10-2.png?width=40pc)
 
-11.  Khi tạo thành công thì sẽ được 2 **crawler** có **State** là **Ready** như hình.
+11. Khi tạo thành công thì sẽ được 2 **crawler** có **State** là **Ready** như hình.
 ![Image](../../images/3/3-5/11.png?width=40pc)
