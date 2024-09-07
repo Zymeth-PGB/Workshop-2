@@ -2,4 +2,4 @@
 
 Link to Workshop : 
 
-Code : [AWS Data Pipeline](https://github.com/Zymeth-PGB/AWS-Data-Pipeline)
+Code : [AWS Basic Data Pipeline](https://github.com/Zymeth-PGB/AWS-Basic-Data-Pipeline)
