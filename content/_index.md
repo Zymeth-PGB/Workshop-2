@@ -9,7 +9,7 @@ chapter = false
 
 Trong phạm vi bài lab này bạn sẽ tìm hiểu về một Data Pipeline đơn giản từ việc dữ liệu vào và xử lý như thế nào để đưa ra được kết quả đến người dùng. Ở đây ta sẽ đưa kết quả ra dạng các biểu đồ thông qua Grafana hoặc sẽ lọc những thông tin cần thiết từ AWS Athena.
     
-![Diagram](/images/0/1.png?width=60pc)
+![Image](/images/0/1.png?width=60pc)
 
 #### Nội dung chính
 
