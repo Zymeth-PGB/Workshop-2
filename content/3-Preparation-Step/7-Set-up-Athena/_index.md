@@ -1,21 +1,21 @@
 +++
-title = "Thiết lập và query với Athena"
+title = "Setup and Query with Athena"
 date = 2024
 weight = 7
 chapter = false
 pre = "<b>3.7 </b>"
 +++
 
-#### Thiết lập Athena
+#### Set Up Athena
 
-1. Nhập và tìm kiếm **Athena** trong thanh tìm kiếm.
+1. Enter and search for **Athena** in the search bar.
 ![Image](../../images/3/3-7/1.png?width=40pc)
 
-2. Trong màn hình **Query Editor** của **Athena** chọn **Data Source** như hình. Phần **Database** sẽ hiển thị **Database** trước khi **Transforms** và sau khi **Transforms**, bạn có thể chọn bất kì cái nào tùy vào mục đích sử dụng, khi chọn xong thì ở phần **Tables** sẽ xuất hiện các **Table** của **Database** đã chọn.
+2. In the **Query Editor** screen of **Athena**, select the **Data Source** as shown. The **Database** section will display the **Database** before and after **Transforms**. You can choose either one based on your use case; once selected, the **Tables** section will show the **Tables** of the chosen **Database**.
 ![Image](../../images/3/3-7/2.png?width=40pc)
 
-3. Để có thể chạy được các **query** thì ta cần phải cài đặt thêm vị trí của các kết quả **query**. Ở đây ta chọn phần **Settings** và chọn **Manage**.
+3. To run queries, you need to set up a location for the query results. Here, select **Settings** and then choose **Manage**.
 ![Image](../../images/3/3-7/3.png?width=40pc)
 
-4. Trước khi chọn đường dẫn đến **S3** thì ta phải quay lại **S3** và tạo 1 **Bucket** phục vụ cho việc chứa kết quả **query**. Sau khi tạo xong thì chọn đường dẫn đến **Bucket** đó và chọn **Save**.
+4. Before selecting the path to **S3**, you need to go back to **S3** and create a **Bucket** to store the query results. After creating it, select the path to that **Bucket** and click **Save**.
 ![Image](../../images/3/3-7/4.png?width=40pc)

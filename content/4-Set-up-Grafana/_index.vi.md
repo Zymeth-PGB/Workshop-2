@@ -36,13 +36,13 @@ Có 2 cách để cài đặt **Grafana** là cài trực tiếp vào máy hoặ
 2. **Username** và **password** mặc định là **admin** và **admin** cho lần đầu đăng nhập. Nếu muốn thay đổi bạn có thể truy cập vào **Profile** và thực hiện thay đổi mật khẩu.
 3. Sau khi đăng nhập thành công ta sẽ thực hiện kết nối tới **Redshift** như sau:
    - Ở thanh điều hướng bên trái chọn **connection**.
-![Image](/images/4/1.png?width=40pc)
+![Image](../images/4/1.png?width=40pc)
 
    - Nhập và tìm kiếm **Redshift** ở thanh tìm kiếm.
-![Image](/images/4/2.png?width=40pc)
+![Image](../images/4/2.png?width=40pc)
 
    - Chọn **Install** để thêm **connection** tới **Redshift**.
-![Image](/images/4/3.png?width=40pc)
+![Image](../images/4/3.png?width=40pc)
 
    - Sau khi cài đặt thành công chọn **Add new data source** để thêm data đã **transforms** để thực hiện tạo **Dashboard** theo nhu cầu.
-![Image](/images/4/4.png?width=40pc)
+![Image](../images/4/4.png?width=40pc)

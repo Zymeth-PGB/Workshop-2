@@ -1,32 +1,32 @@
 +++
-title = "Tạo IAM Role"
+title = "Create IAM Role"
 date = 2024
 weight = 2
 chapter = false
 pre = "<b>3.2 </b>"
 +++
 
-#### Tạo IAM role chung cho các dịch vụ
+#### Create a IAM role for services.
 
-1. Nhập và tìm kiếm **IAM** ở thanh tìm kiếm, sau đó ấn chọn vào **IAM**.
+1. Enter and search for **IAM** in the search bar, then click on **IAM**.
 ![Image](../../images/3/3-2/1.png?width=40pc)
 
-2. Ở thanh điều hướng bên trái chọn **Roles** để truy cập vào bảng điều khiển **Roles**.
+2. In the left navigation pane, select **Roles** to access the **Roles** dashboard.
 ![Image](../../images/3/3-2/2.png?width=20pc)
 
-3. Ấn vào **Create role** để tạo **role**
+3. Click on **Create role** to create a **role**.
 ![Image](../../images/3/3-2/3.png?width=40pc)
 
-4. Chọn **AWS Service** và điền **Glue** vào **Service or use case** để chọn **Glue**. Chọn **Next** để qua bước tiếp theo.
+4. Select **AWS Service** and enter **Glue** in the **Service or use case** field to choose **Glue**. Click **Next** to proceed to the next step.
 ![Image](../../images/3/3-2/4.png?width=40pc)
 
-5. Tìm và chọn **AdministratorAccess** sau đó ấn **Next** để qua bước tiếp theo.
+5. Find and select **AdministratorAccess**, then click **Next** to move to the next step.
 ![Image](../../images/3/3-2/5-1.png?width=40pc)
 ![Image](../../images/3/3-2/5-2.png?width=40pc)
 
-6. Ở bước này bạn chỉ việc điền tên và ấn **Create role**, các **step** khác vẫn để mặc định.
+6. In this step, simply enter a name and click **Create role**, leaving the other **steps** as default.
 ![Image](../../images/3/3-2/6-1.png?width=40pc)
 ![Image](../../images/3/3-2/6-2.png?width=40pc)
 
-7. Sau khi tạo **role** xong bạn có thể kiểm tra xem mình có tạo được chưa trong danh sách các **role**, ở đây mình đã tạo thành công như ô khoanh màu đỏ
+7. After creating the **role**, you can check if it was successfully created in the list of **roles**. In this case, I successfully created one as shown in the red-circled box.
 ![Image](../../images/3/3-2/7.png?width=40pc)

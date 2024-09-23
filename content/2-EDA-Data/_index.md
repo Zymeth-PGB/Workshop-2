@@ -1,52 +1,52 @@
 +++
-title = "Chuẩn bị dữ liệu"
+title = "Prepare data"
 date = 2024
 weight = 2
 chapter = false
 pre = "<b>2. </b>"
 +++
 
-#### Nguồn dữ liệu
+#### Data Source
 
-Dữ liệu được sử dụng trong workshop này có ngữ cảnh là Một công ty viễn thông hư cấu đã cung cấp dịch vụ điện thoại gia đình và Internet cho 7043 khách hàng ở California trong quý 3.
+The data used in this workshop is set in the context of a fictional telecommunications company that provided home phone and Internet services to 7,043 customers in California during the third quarter.
 
-Có thể tìm và tải dữ liệu ở đây : [Telco customer churn: IBM dataset](https://www.kaggle.com/datasets/yeanzc/telco-customer-churn-ibm-dataset)
+Data can be found and downloaded here. : [Telco customer churn: IBM dataset](https://www.kaggle.com/datasets/yeanzc/telco-customer-churn-ibm-dataset)
 
-#### Khám phá dữ liệu
+#### Exploratory Data Analysis
 
-Mô tả các trường dữ liệu :
-- **CustomerID**: Một **ID** duy nhất xác định từng khách hàng.
-- **Count**: Một giá trị được sử dụng trong báo cáo/bảng thông tin để tổng hợp số lượng khách hàng trong một tập hợp đã lọc.
-- **Country**: Quốc gia nơi cư trú chính của khách hàng.
-- **State**: Tiểu bang nơi cư trú chính của khách hàng.
-- **City**: Thành phố nơi cư trú chính của khách hàng.
-- **Zip Code**: Mã bưu chính nơi cư trú chính của khách hàng.
-- **Lat Long**: Vĩ độ và kinh độ kết hợp của nơi cư trú chính của khách hàng.
-- **Latitude**: Vĩ độ của nơi cư trú chính của khách hàng.
-- **Longitude**: Kinh độ của nơi cư trú chính của khách hàng.
-- **Gender**: Giới tính của khách hàng: **Male**, **Female**
-- **Senior Citizen**: Chỉ ra nếu khách hàng từ 65 tuổi trở lên: **Yes**, **No**
-- **Partner**: Chỉ ra nếu khách hàng có đối tác: **Yes**, **No**
-- **Dependents**: Chỉ ra nếu khách hàng sống với bất kỳ người phụ thuộc nào: **Yes**, **No**. Người phụ thuộc có thể là con cái, cha mẹ, ông bà, v.v.
-- **Tenure Months**: Chỉ ra tổng số tháng mà khách hàng đã làm việc cho công ty vào cuối quý được chỉ định ở trên.
-- **Phone Service**: Chỉ ra nếu khách hàng đăng ký dịch vụ điện thoại gia đình với công ty: **Yes**, **No**
-- **Multiple Lines**: Chỉ ra nếu khách hàng đăng ký nhiều đường dây điện thoại với công ty: **Yes**, **No**
-- **Internet Service**: Chỉ ra nếu khách hàng đăng ký dịch vụ Internet với công ty: **No**, **DSL**, **Fiber** **Optic**, **Cable**.
-- **Online Security**: Chỉ ra liệu khách hàng có đăng ký dịch vụ bảo mật trực tuyến bổ sung do công ty cung cấp hay không: **Yes**, **No**
-- **Online Backup**: Chỉ ra liệu khách hàng có đăng ký dịch vụ sao lưu trực tuyến bổ sung do công ty cung cấp hay không: **Yes**, **No**
-- **Device Protection**: Chỉ ra liệu khách hàng có đăng ký gói bảo vệ thiết bị bổ sung cho thiết bị Internet do công ty cung cấp hay không: **Yes**, **No**
-- **Tech Support**: Chỉ ra liệu khách hàng có đăng ký gói hỗ trợ kỹ thuật bổ sung từ công ty với thời gian chờ được rút ngắn hay không: **Yes**, **No**
-- **Streaming TV**: Chỉ ra liệu khách hàng có sử dụng dịch vụ Internet của mình để truyền phát chương trình truyền hình từ nhà cung cấp bên thứ ba hay không: **Yes**, **No**. Công ty không tính thêm phí cho dịch vụ này.
-- **Streaming Movies**: Chỉ ra liệu khách hàng có sử dụng dịch vụ Internet của mình để truyền phát phim từ nhà cung cấp bên thứ ba hay không: **Yes**, **No**. Công ty không tính thêm phí cho dịch vụ này.
-- **Contract**: Chỉ ra loại hợp đồng hiện tại của khách hàng: **Month-to-Month**, **One Year**, **Two Year**.
-- **Paperless Billing**: Chỉ ra nếu khách hàng đã chọn thanh toán không cần giấy tờ: **Yes**, **No**
-- **Payment Method**: Chỉ ra cách khách hàng thanh toán hóa đơn của họ: **Bank Withdrawal**, **Credit Card**, **Mailed Check**
-- **Monthly Charge**: Chỉ ra tổng phí hàng tháng hiện tại của khách hàng cho tất cả các dịch vụ của công ty.
-- **Total Charges**: Chỉ ra tổng phí của khách hàng, được tính đến cuối quý được chỉ định ở trên.
-- **Churn Label**: **Yes** = khách hàng đã rời công ty trong quý này. **No** = khách hàng vẫn tiếp tục gắn bó với công ty. Có liên quan trực tiếp đến **Churn Value**.
-- **Churn Value**: **1** = khách hàng đã rời công ty trong quý này. **0** = khách hàng vẫn tiếp tục gắn bó với công ty. Có liên quan trực tiếp đến **Churn Label**.
-- **Churn Score**: Giá trị từ **0-100** được tính bằng công cụ dự đoán **IBM SPSS Modeler**. Mô hình kết hợp nhiều yếu tố được biết là nguyên nhân gây ra tình trạng **churn**. Điểm càng cao thì khả năng khách hàng **churn** càng cao.
-- **CLTV**: Giá trị trọn đời của khách hàng. **CLTV** dự đoán được tính bằng cách sử dụng các công thức của công ty và dữ liệu hiện có. Giá trị càng cao, khách hàng càng có giá trị. Khách hàng có giá trị cao nên được theo dõi để biết tình trạng **churn**.
-- **Churn Reason**: Lý do cụ thể của khách hàng khi rời khỏi công ty. Liên quan trực tiếp đến **Churn Category**.
+Description of data fields :
+- **CustomerID**: A unique **ID** that identifies each customer.
+- **Count**: A value used in reporting/dashboarding to sum up the number of customers in a filtered set.
+- **Country**: The country of the customer’s primary residence.
+- **State**: The state of the customer’s primary residence.
+- **City**: The city of the customer’s primary residence.
+- **Zip Code**: The zip code of the customer’s primary residence.
+- **Lat Long**: The combined latitude and longitude of the customer’s primary residence.
+- **Latitude**: The latitude of the customer’s primary residence.
+- **Longitude**: The longitude of the customer’s primary residence.
+- **Gender**: The customer’s gender: **Male**, **Female**
+- **Senior Citizen**: Indicates if the customer is 65 or older: **Yes**, **No**
+- **Partner**: Indicate if the customer has a partner: **Yes**, **No**
+- **Dependents**: Indicates if the customer lives with any dependents: **Yes**, **No**. Dependents could be children, parents, grandparents, etc.
+- **Tenure Months**: Indicates the total amount of months that the customer has been with the company by the end of the quarter specified above.
+- **Phone Service**: Indicates if the customer subscribes to home phone service with the company: **Yes**, **No**
+- **Multiple Lines**: Indicates if the customer subscribes to multiple telephone lines with the company: **Yes**, **No**
+- **Internet Service**: Indicates if the customer subscribes to Internet service with the company: **No**, **DSL**, **Fiber** **Optic**, **Cable**.
+- **Online Security**: Indicates if the customer subscribes to an additional online security service provided by the company: **Yes**, **No**
+- **Online Backup**: Indicates if the customer subscribes to an additional online backup service provided by the company: **Yes**, **No**
+- **Device Protection**: Indicates if the customer subscribes to an additional device protection plan for their Internet equipment provided by the company: **Yes**, **No**
+- **Tech Support**: Indicates if the customer subscribes to an additional technical support plan from the company with reduced wait times: **Yes**, **No**
+- **Streaming TV**: Indicates if the customer uses their Internet service to stream television programing from a third party provider: **Yes**, **No**. The company does not charge an additional fee for this service.
+- **Streaming Movies**: Indicates if the customer uses their Internet service to stream movies from a third party provider: **Yes**, **No**. The company does not charge an additional fee for this service.
+- **Contract**: Indicates the customer’s current contract type: **Month-to-Month**, **One Year**, **Two Year**.
+- **Paperless Billing**:  Indicates if the customer has chosen paperless billing: **Yes**, **No**
+- **Payment Method**: Indicates how the customer pays their bill: **Bank Withdrawal**, **Credit Card**, **Mailed Check**
+- **Monthly Charge**: Indicates the customer’s current total monthly charge for all their services from the company.
+- **Total Charges**: Indicates the customer’s total charges, calculated to the end of the quarter specified above.
+- **Churn Label**: **Yes** = the customer left the company this quarter. **No** = the customer remained with the company. Directly related to **Churn Value**.
+- **Churn Value**: **1** = the customer left the company this quarter. **0** = the customer remained with the company. Directly related to **Churn Label**.
+- **Churn Score**: A value from **0-100** that is calculated using the predictive tool **IBM SPSS Modeler**. The model incorporates multiple factors known to cause **churn**. The higher the score, the more likely the customer will **churn**.
+- **CLTV**: Customer Lifetime Value. A predicted **CLTV** is calculated using corporate formulas and existing data. The higher the value, the more valuable the customer. High value customers should be monitored for **churn**.
+- **Churn Reason**: A customer’s specific reason for leaving the company. Directly related to **Churn Category**.
 
-Bộ dữ liệu được mô tả chi tiết hơn ở đây : [Telco customer churn](https://community.ibm.com/community/user/businessanalytics/blogs/steven-macko/2019/07/11/telco-customer-churn-1113)
+The dataset is described in more detail here. : [Telco customer churn](https://community.ibm.com/community/user/businessanalytics/blogs/steven-macko/2019/07/11/telco-customer-churn-1113)

@@ -1,48 +1,49 @@
 +++
-title = "Dọn dẹp tài nguyên"
+title = "Clean up"
 date = 2024
 weight = 5
 chapter = false
 pre = "<b>5. </b>"
 +++
 
-Chúng ta sẽ dọn dẹp tài nguyên theo thứ tự như sau:
-Xóa **Bucket S3**:
-   - Truy cập vào mục quản lý **Buckets**.
-   - Chọn **Buckets** đã tạo trong **Workshop**.
-   - Chọn **Delete** và nhập lại tên **Bucket** như yêu cầu để xóa **Bucket**.
+We will clean up the resources in the following order:
 
-Xóa **IAM role**:
-   - Truy cập **console** của **IAM** chọn phần **Roles**.
-   - Chọn vào **Role** đã tạo trong **Workshop** và chọn **Delete**.
-   - Nhập lại tên **Role** và hoàn thành **Delete**.
+**Delete S3 Bucket:**
+   - Access the **Buckets** management section.
+   - Select the **Buckets** created in the **Workshop**.
+   - Click **Delete** and re-enter the **Bucket** name as requested to delete the **Bucket**.
 
-Xóa **Databases** trong **Glue**:
-   - Truy cập vào **console Glue**.
-   - Chọn **Databases** và chọn các **Databases** đã tạo trong **Workshop**.
-   - Chọn **Delete** để xóa các **Databases**.
+**Delete IAM Role:**
+   - Access the **IAM** console and select the **Roles** section.
+   - Click on the **Role** created in the **Workshop** and select **Delete**.
+   - Re-enter the **Role** name and complete the **Delete** process.
 
-Xóa **Redshift cluster** và **connection Redshift**:
-   - Xóa **cluster**
-     - Truy cập vào **console Redshift**.
-     - Chọn **View all clusters** để xem tất cả các **cluster**.
-     - Chọn **cluster** đã tạo và chọn **Action** để thực hiện **Delete**.
-     - Sau khi chọn **Delete** trong **Action** ta bỏ chọn **Create final snapshot** và điền **delete** vào ô để hoàn thành **Delete cluster**.
+**Delete Databases in Glue:**
+   - Access the **Glue** console.
+   - Select **Databases** and choose the **Databases** created in the **Workshop**.
+   - Click **Delete** to remove the **Databases**.
 
-   - Xóa **connection**
-     - Truy cập vào **console Glue**.
-     - Chọn **connections** ở thanh điều hướng bên trái.
-     - Chọn **connection** đã tạo trong **Workshop** và chọn **Action** để thực hiện **Delete**.
-     - Sau khi chọn **Delete** trong **Action** tiếp tục xác nhận **Delete** để xóa.
+**Delete Redshift Cluster and Connection:**
+   - **Delete Cluster**
+     - Access the **Redshift** console.
+     - Select **View all clusters** to see all clusters.
+     - Choose the cluster created and select **Action** to perform **Delete**.
+     - After selecting **Delete** in **Action**, uncheck **Create final snapshot** and enter **delete** in the box to complete the **Delete cluster**.
 
-Xóa **Crawler**:
-   - Truy cập vào **console Glue**.
-   - Chọn **crawlers** ở thanh điều hướng bên trái.
-   - Chọn **crawler** đã tạo trong **Workshop** và chọn **Action** để thực hiện **Delete**.
-   - Sau khi chọn **Delete** trong **Action** tiếp tục xác nhận **Delete** để xóa.
+   - **Delete Connection**
+     - Access the **Glue** console.
+     - Select **Connections** in the left navigation pane.
+     - Choose the **connection** created in the **Workshop** and select **Action** to perform **Delete**.
+     - After selecting **Delete** in **Action**, confirm the **Delete** to remove it.
 
-Xóa **ETL job**:
-   - Truy cập vào **console Glue**.
-   - Chọn **ETL jobs** ở thanh điều hướng bên trái.
-   - Chọn **job** đã tạo trong **Workshop** và chọn **Action** để thực hiện **Delete**.
-   - Sau khi chọn **Delete** trong **Action** tiếp tục xác nhận **Delete** để xóa.
+**Delete Crawler:**
+   - Access the **Glue** console.
+   - Select **Crawlers** in the left navigation pane.
+   - Choose the **crawler** created in the **Workshop** and select **Action** to perform **Delete**.
+   - After selecting **Delete** in **Action**, confirm the **Delete** to remove it.
+
+**Delete ETL Job:**
+   - Access the **Glue** console.
+   - Select **ETL jobs** in the left navigation pane.
+   - Choose the **job** created in the **Workshop** and select **Action** to perform **Delete**.
+   - After selecting **Delete** in **Action**, confirm the **Delete** to remove it.
